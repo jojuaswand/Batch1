@@ -22,7 +22,7 @@ id(10)
 
 help("keywords")
 
-import keyword
+import keyword #keyword is a module / library of python
 keyword.kwlist
 print(keyword.iskeyword("x"))
 print(keyword.iskeyword(x))
