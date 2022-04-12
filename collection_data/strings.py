@@ -125,5 +125,74 @@ s = "1a2b3c4d3c1a2b3c"
 # print(s.rfind("3")) #same as rindex()
 # print(s.rfind("10")) ##instead of error we will get -1 if value doesnt exist
 
+#replace()
+# s = "hello world"
+# a = s.replace("l", "m") #it is replacing a string with another string
+# print(a) #it is returning a new string
+# print(s) #its not affecting original or base string
 
+# # b = s.replace("l", 1)   replace() argument 2 must be str, not int
+# b = s.replace("l", "1")  #the values should be of the same type
+# print(b)
+# print(s)
+# s = "hello world"
+# # c = s.replace("l", "x", 1) #it takes count of the number of times we need to replace
+# c = s.replace("hello", "x")
+# c = s[::-1].replace("l", "", 1)
+# print(c[::-1])
+# print(s)
+# print(s.replace("bye", "x")) #if the value to be replaced is not in string it will return original string
+
+#startswith() and endswith()
+# s = "hello world bye world"
+# print(s.startswith("h")) #its just checking whether the string starts with the given value and it returns boolean values
+# # print(s.startswith("h", s.index("w"))) #we can mention start and end index
+# print(s.startswith("h", 6))
+# print(s.startswith("hello"))
+# print(s.startswith("helo"))#position matters
+# print(s.endswith("ld")) #its checking whether the string is ending with the given value and it returns boolean values
+# print(s.endswith("world",0 ,11)) #sicing to check
+# print(s.endswith("world", 0, s.index("d") + 1))
+
+#split()
+# s = "hello world bye world"
+# print(s.split()) #separates the string and by default separator value is space " "
+# print(s) #it is not affecting the original value
+# print(s.split(""))ValueError: empty separator cannot use empty string as separator
+
+# # s = "hello- world - bye"
+# # # print(s.split("-"))
+# # print(s.split("-", 1)) #we can assign the number of times we require to split
+#
+# s = "hello hello llo"
+# print(s.split("l"))
+# print(s.split("l", 2))
+
+#join()
+# s = "hello"
+# print(" ".join(s)) #it joins the given base value to the value inside join()
+# #adds the base value from the 1st string until the last, inbetween characters or elements
+# #it returns string value
+# print("-".join(s))
+# print(s.join(s))  #hhelloello
+# print(s)
+# # print("".join("hello", "world")) #take only one value which is an iterable
+# # print("".join(["hello", "world"]))
+
+#strip(), lstrip() and rstrip()
+# s = " hello "
+# print(s.strip()) #it removes specified value from the string brcause strip() will consider space to be removed by default
+# print(s) #it is not affecting original value
+#it removes from the beginning and at the ending
+# s = "#@heloo#@"
+# print(s.strip("@"))
+# print(s.strip("#@"))
+
+# s = "&%$@#hello%#&$@"
+# print(s.strip("&%$@"))
+# s = "helloh dworld"
+# print(s.strip("hd", 1)) #only takes one value which is specified string to be removed
+s = "hhello worldh"
+# print(s.lstrip("hd")) #it removes from the left side or beginning
+# print(s.rstrip("hd")) #it removes from right side or ending
 
