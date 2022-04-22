@@ -86,4 +86,8 @@ if n %2 == 0:
 else:
     print("odd")
 
-
+s = "hello"
+if s.split():
+    print("spliting" , s.split("l"))
+else:
+    print("not spliting")
