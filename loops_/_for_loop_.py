@@ -49,15 +49,22 @@
 # # print(s1)
 
 # l = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# s = {1, 2, 3, 4, 5, 6, 7, 8, 9}
 # for i in l:
+#     print(i)
+# for i in s:
 #     print(i)
 
 # for i in l:
 #     if i % 2 == 0:
 #         print(i)
-
+# s = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+# for i in s:
+#     if i % 2 == 0:
+#         print(i)
+#
 # print(list(range(10)))
-
+# print(set(range(11)))
 # l = list(range(21))
 # evenl = []
 # oddl = []
@@ -68,6 +75,17 @@
 #         oddl.append(i)
 #
 # print(evenl, oddl)
+
+# evens = set()
+# odds = set()
+# for i in range(21):
+#     if i % 2 == 0:
+#         evens.add(i)
+#     else:
+#         odds.add(i)
+#
+#
+# print(evens, odds)
 
 
 # l = ["hi", "bye", "hello", "good"]
@@ -80,6 +98,18 @@
 #
 # print(l1)
 
+# s = {"hi", "bye", "hello", "good"}
+# s1 = set()
+# for i in s:
+#     if len(i) % 2 == 0:
+#         s1.add(i)
+#     else:
+#         s1.add(i[::-1])
+#
+# print(s1)
+
+
+
 # l = ["hi", "bye", "hello", "good", "apple"]
 # l1 = []
 # for i in l:
@@ -89,3 +119,12 @@
 # print(l1)
 
 
+
+# s = {"hi", "bye", "hello", "good", "apple"}
+# s1 = set()
+# for i in s:
+#     if i[0] not in "aeiouAEIOU":
+#         s1.add(i)
+#
+#
+# print(s1)
