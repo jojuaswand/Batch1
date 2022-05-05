@@ -128,3 +128,70 @@
 #
 #
 # print(s1)
+
+d = {"name": "python", "age": 2, "rno": 1}
+# for i in d:
+#     print(i)
+
+# for i in d:
+#     print(d[i])
+
+# for i in d.values():
+#     print(i)
+
+# for i in d.items():
+#     print(i)
+
+d = {"name": "python", "age": 2, "rno": 1, 1: 2}
+
+# for i in d:
+#     if isinstance(i, str):
+#         print("key is string")
+#     else:
+#         print("not a string")
+
+
+# d = {"name": "python", "age": 2, "rno": 1, 1: 2}
+# d1 = {}
+# d2 = {}
+# for i in d:
+#     if isinstance(i, str):
+#         d1[i] = d[i]
+#     else:
+#         d2[i] = d[i]
+# print(d1)
+# print(d2)
+
+# d = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6}
+# even = {}
+# odd = {}
+# for i in d:
+#     if d[i] % 2 == 0:
+#         even[i] = d[i]
+#     else:
+#         odd[i] = d[i]
+#
+# print(even)
+# print(odd)
+
+# s = "hello world"
+# d = {}
+# for i in range(len(s)):
+#     if s[i] in "aeiouAEIOU":
+#         d[i] = s[i]
+#
+# print(d)
+
+# d = {"name": "python", "age": 2, "rno": 1, 1: 2}
+# d1 = {}
+# for i, v in enumerate(d):
+#     d1[i] = v
+
+# for i, v in enumerate(d.items()):
+#     d1[i] = v
+#
+# print(d1)
+
+# print(list(enumerate(d)))
+# print(list(enumerate(d.values())))
+# print(list(enumerate(d.items())))
